@@ -4,8 +4,6 @@ import 'package:module5/my_text.dart';
 void main() {
   runApp(const MyApp());
 }
-
-//Bangladesh is special thaks to alo k
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
@@ -33,23 +31,24 @@ class _MyAppState extends State<MyApp> {
         ),
         body: const Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          
           children: [
             Center(
               child: MyText(
                   color: Colors.black,
-                  fontSize: 18,
+                  fontSize: 16,
                   text: "This is mod 5 Assignment",
                   fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 15),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.baseline,
+              textBaseline: TextBaseline.alphabetic,
               children: [
                 MyText(color: Colors.red, fontSize: 24, text: "My "),
-                MyText(color: Colors.blue, fontSize: 14, text: "phone "),
+                MyText(color: Colors.blue, fontSize: 13, text: "phone "),
                 MyText(
-                  color: Colors.purple,
+                  color: Colors.purpleAccent,
                   fontSize: 18,
                   text: "name ",
                   fontWeight: FontWeight.bold,
